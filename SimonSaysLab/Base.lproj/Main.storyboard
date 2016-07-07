@@ -13,34 +13,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="1sc-un-zst">
-                                <rect key="frame" x="95" y="175" width="130" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="88C-Zv-You">
+                                <rect key="frame" x="21" y="26" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tapColorView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhh-Xf-Xba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="dXH-O3-X2B">
+                                <rect key="frame" x="199" y="26" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23018704354763031" green="0.77713233232498169" blue="0.3158949613571167" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tapColorView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlj-kd-Q3U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Bs4-mv-gqk">
+                                <rect key="frame" x="21" y="442" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tapColorView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3U-En-d5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="gBF-D0-dM6">
+                                <rect key="frame" x="199" y="442" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tapColorView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCR-HQ-DW7"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="1sc-un-zst">
+                                <rect key="frame" x="95" y="179" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EAQ-y2-rTz">
-                                <rect key="frame" x="110" y="313" width="101" height="36"/>
+                                <rect key="frame" x="110" y="323" width="101" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Start Game"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="startGameTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBr-vr-xXA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playing…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rmB-RF-5aE">
-                                <rect key="frame" x="20" y="372" width="280" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you win?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rmB-RF-5aE">
+                                <rect key="frame" x="20" y="367" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="displayColorView" destination="1sc-un-zst" id="fls-Zq-7g0"/>
                         <outlet property="startGameButton" destination="EAQ-y2-rTz" id="sUT-3p-k2I"/>
                         <outlet property="winLabel" destination="rmB-RF-5aE" id="03J-XB-cXY"/>
+                        <outletCollection property="colorButtons" destination="88C-Zv-You" collectionClass="NSMutableArray" id="oSm-qL-Buc"/>
+                        <outletCollection property="colorButtons" destination="dXH-O3-X2B" collectionClass="NSMutableArray" id="MW8-CP-G6k"/>
+                        <outletCollection property="colorButtons" destination="Bs4-mv-gqk" collectionClass="NSMutableArray" id="M5V-5b-ISa"/>
+                        <outletCollection property="colorButtons" destination="gBF-D0-dM6" collectionClass="NSMutableArray" id="bO2-ng-wIc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

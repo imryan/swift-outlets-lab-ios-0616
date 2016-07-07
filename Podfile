@@ -6,7 +6,7 @@ target 'SimonSaysLab' do
   use_frameworks!
 
   # Pods for SimonSaysLab
-
+    pod 'ChameleonFramework/Swift'
   target 'SimonSaysLabTests' do
     inherit! :search_paths
     # Pods for testing

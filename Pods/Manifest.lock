@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - KIF (3.4.2):
     - KIF/Core (= 3.4.2)
   - KIF/Core (3.4.2)
@@ -6,15 +9,17 @@ PODS:
   - Quick (0.9.2)
 
 DEPENDENCIES:
+  - ChameleonFramework/Swift
   - KIF (~> 3.4)
   - Nimble (~> 4.0)
   - Quick (~> 0.9)
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   KIF: b518c9831453abea5afdbbde3908ec47832d6d56
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
 
-PODFILE CHECKSUM: 59c0dc9c311d3cbc9f41624e39ead169572aacba
+PODFILE CHECKSUM: 3692141d33ed03a3e36d973b9462cc088fb2bce4
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

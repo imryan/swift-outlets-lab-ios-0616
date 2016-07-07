@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ChameleonFramework
 import UIKit
 
 enum Color: Int {
@@ -14,23 +15,24 @@ enum Color: Int {
 }
 
 // MARK: - UIColor Display
+
 extension Color {
     var colorToDisplay: UIColor {
         switch self {
         case .Red:
-            return UIColor.redColor()
+            return UIColor.flatRedColor()
         case .Green:
-            return UIColor.greenColor()
+            return UIColor.flatGreenColor()
         case .Yellow:
-            return UIColor.yellowColor()
+            return UIColor.flatYellowColor()
         case .Blue:
-            return UIColor.blueColor()
+            return UIColor.flatSkyBlueColor()
         }
     }
 }
 
-
 // MARK: - CustomStringConvertible Protocol
+
 extension Color: CustomStringConvertible {
     var description: String {
         switch self {
@@ -45,7 +47,6 @@ extension Color: CustomStringConvertible {
         }
     }
 }
-
 
 struct SimonSays {
     
@@ -67,6 +68,7 @@ struct SimonSays {
 
 
 // MARK: - Gameplay methods
+
 extension SimonSays {
 
     mutating func nextColor() -> Color? {
